@@ -21,7 +21,6 @@ export default function Login() {
         }}
       />
 
-      {/* Partículas vintage */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         {[...Array(18)].map((_, i) => (
           <div
@@ -39,7 +38,7 @@ export default function Login() {
         ))}
       </div>
 
-      {/* Brillo central vintage */}
+
       <div
         className="absolute bottom-[80%] left-1/2 w-28 h-28 rounded-full pointer-events-none"
         style={{
@@ -52,7 +51,6 @@ export default function Login() {
         }}
         />
 
-      {/* ── Card ── */}
       <div
         className="relative z-10 w-full max-w-sm mx-4 rounded-2xl p-8"
         style={{
@@ -64,7 +62,6 @@ export default function Login() {
         }}
       >
 
-        {/* Título */}
         <div className="text-center mb-8">
           <h1 className="text-2xl font-bold tracking-wide" style={{ color: "#f4ebd0", letterSpacing: "0.08em" }}>
             Daily Timeboxing
@@ -74,9 +71,8 @@ export default function Login() {
           </p>
         </div>
 
-        {/* Form */}
         <form onSubmit={handleSubmit} className="space-y-5">
-          {/* Correo o nombre */}
+
           <div>
             <label className="block text-xs font-semibold mb-1.5 tracking-widest uppercase"
               style={{ color: "rgba(244, 235, 208, 0.7)" }}>
@@ -100,7 +96,6 @@ export default function Login() {
             />
           </div>
 
-          {/* Contraseña */}
           <div>
             <label className="block text-xs font-semibold mb-1.5 tracking-widest uppercase"
               style={{ color: "rgba(244, 235, 208, 0.7)" }}>
@@ -124,7 +119,6 @@ export default function Login() {
             />
           </div>
 
-          {/* Botón */}
           <button
             type="submit"
             className="w-full py-3 rounded-xl font-semibold text-sm tracking-widest uppercase transition-all duration-200 active:scale-95 mt-2"
@@ -146,7 +140,6 @@ export default function Login() {
         </p>
       </div>
 
-      {/* Keyframes */}
       <style>{`
         @keyframes fadeUp {
           from { opacity: 0; transform: translateY(24px); }

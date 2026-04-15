@@ -38,7 +38,6 @@ export default function Planner() {
       className="flex min-h-screen"
       style={{ fontFamily: "'Georgia', serif", background: "#0f1721" }}
     >
-      {/* Fondo Vintage */}
       <div className="fixed inset-0 pointer-events-none" style={{
         background: "radial-gradient(ellipse 70% 50% at 50% 100%, #1e3046 0%, transparent 60%)",
       }} />
@@ -47,7 +46,6 @@ export default function Planner() {
 
       <main className="relative z-10 flex-1 px-6 py-8 overflow-y-auto">
 
-        {/* Título + fecha */}
         <div className="flex items-end justify-between mb-6" style={{ animation: "fadeUp 0.5s ease both" }}>
           <div>
             <h1 className="text-4xl font-bold leading-none tracking-wide" style={{ color: "#f4ebd0" }}>
@@ -67,7 +65,6 @@ export default function Planner() {
           </div>
         </div>
 
-        {/* Body: dos columnas */}
         <div
           className="rounded-2xl overflow-hidden"
           style={{
@@ -79,12 +76,10 @@ export default function Planner() {
         >
           <div className="flex">
 
-            {/* Columna izquierda */}
             <div
               className="w-[42%] p-6 flex flex-col gap-6"
               style={{ borderRight: "1px solid rgba(74, 111, 165, 0.2)" }}
             >
-              {/* Top Priorities */}
               <div>
                 <h3 className="text-xs font-bold mb-3 uppercase tracking-widest" style={{ color: "rgba(244, 235, 208, 0.6)" }}>
                   Top Priorities
@@ -110,7 +105,6 @@ export default function Planner() {
                 </div>
               </div>
 
-              {/* Brain Dump */}
               <div className="flex-1">
                 <h3 className="text-xs font-bold mb-3 uppercase tracking-widest" style={{ color: "rgba(244, 235, 208, 0.6)" }}>
                   Brain Dump
@@ -133,10 +127,8 @@ export default function Planner() {
               </div>
             </div>
 
-            {/* Columna derecha — Timebox grid */}
             <div className="flex-1 flex flex-col">
 
-              {/* Header de columnas */}
               <div
                 className="grid grid-cols-[48px_1fr_1fr] text-xs font-bold uppercase tracking-widest"
                 style={{
@@ -149,7 +141,6 @@ export default function Planner() {
                 <div className="py-3 text-center">:30</div>
               </div>
 
-              {/* Filas de horas */}
               <div className="overflow-y-auto" style={{ maxHeight: "480px" }}>
                 {HOURS.map((hour, i) => (
                   <div
@@ -193,7 +184,6 @@ export default function Planner() {
           </div>
         </div>
 
-        {/* Botón guardar */}
         <div className="flex justify-end mt-4" style={{ animation: "fadeUp 0.5s ease 0.2s both" }}>
           <button
             onClick={() => { alert("Plan guardado (demo)"); navigate("/dashboard"); }}

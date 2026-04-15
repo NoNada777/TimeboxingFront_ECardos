@@ -39,7 +39,7 @@ export default function Dashboard() {
       className="flex min-h-screen"
       style={{ fontFamily: "'Georgia', serif", background: "#0f1721" }}
     >
-      {/* Fondo Vintage */}
+
       <div className="fixed inset-0 pointer-events-none" style={{
         background: "radial-gradient(ellipse 70% 50% at 50% 100%, #1e3046 0%, transparent 60%)",
       }} />
@@ -72,7 +72,6 @@ export default function Dashboard() {
           </button>
         </div>
 
-        {/* Stats */}
         <div className="grid grid-cols-3 gap-4 mb-8" style={{ animation: "fadeUp 0.5s ease 0.1s both" }}>
           {stats.map((s) => (
             <div
@@ -97,7 +96,7 @@ export default function Dashboard() {
           ))}
         </div>
 
-        {/* Acceso rápido planificador */}
+
         <div
           className="rounded-2xl p-6 mb-8 flex items-center justify-between"
           style={{
@@ -129,7 +128,6 @@ export default function Dashboard() {
           </button>
         </div>
 
-        {/* Historial */}
         <div style={{ animation: "fadeUp 0.5s ease 0.3s both" }}>
           <h2 className="text-base font-bold mb-4 tracking-wide" style={{ color: "#f4ebd0" }}>
             Planes recientes
